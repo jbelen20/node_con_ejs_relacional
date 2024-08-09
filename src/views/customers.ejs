@@ -5,8 +5,24 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col-md-7">
-            <table class="table table-bordered ">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>n°</th>
+                    <th>Name</th>
+                    <th>Adress</th>
+                    <th>Phone</th>
+                    <th>actions</th>
+                </thead>
+                <tbody>
 
+                    <% if (data) {  for(var i = 0; i < data.length; i++) { %>
+
+                            <tr>
+                                <td> <%= (i + 1) %></td>
+                            </tr>
+                        <% }%>
+                    <% } %>
+                </tbody>
             </table>
         </div>
         <div class="col-md-5">
